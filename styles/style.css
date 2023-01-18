@@ -43,6 +43,9 @@
 }
 
 /* Add the hover state styles for .nav__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__title {
   max-width: 544px;
@@ -61,7 +64,9 @@
 
 .header__image {
   max-width: 636px;
-  z-index: 1;
+  position: absolute;
+  top: 135px;
+  right: 20px;
 }
 
 .header__footer {
@@ -81,7 +86,9 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .header__link here */
+.nav__link:hover {
+  color: #1f69c9;
+}
 
 .header__address {
   margin: 0;
@@ -110,6 +117,18 @@
 }
 
 /* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
+.staff__card {
+  list-style-type: none;
+  margin: auto;
+  padding-top: 68px;
+  max-width: 760px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+  row-gap: 40px;
+}
 
 .card {
   width: 360px;
@@ -221,6 +240,9 @@
 }
 
 /* Add the hover state styles for .events__more here */
+.events__more:hover {
+  color: #1f69c9;
+}
 
 .events__cover {
   flex-grow: 1;
@@ -308,11 +330,14 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 40px;
 }
 
 .step {
-  /* Add styles */
+  flex-basis: 220px;
 }
 
 .step__title {
@@ -339,6 +364,9 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  gap: 120px;
+  position: relative;
 }
 
 .about__title {
@@ -355,10 +383,14 @@
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .about__paragraph {
   margin: 0;
+  z-index: 1;
 }
 
 .about__circle {
@@ -366,35 +398,51 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  z-index: 0;
+  margin-left: -1226px;
+  margin-top: -221px;
 }
 
 .footer {
+  padding: 57px 102px 60px 80px;
+  background-color: black;
+  color: #fff;
+  position: relative;
   box-sizing: border-box;
 }
 
 .footer__columns {
+  display: flex;
+  margin-top: 60px;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
+  flex-direction: column;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
+  flex-direction: column;
 }
 
 .footer__logo {
+  width: 116px;
+  height: 21px;
 }
 
 .footer__list {
-  /* The code below removes the default browser styles for lists */
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
 }
 
 .footer__column-heading {
+  margin: 0 0 20px;
 }
 
 .footer__column-link {
@@ -402,10 +450,15 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
 }
 
-.footer__copyright {
+.footer__copight {
 }

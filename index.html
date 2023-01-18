@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <!-- Wrap the entire page content-->
     <div class="page">
+      <!-- Wrap the entire page content-->
       <header class="header">
         <nav class="nav">
           <img
@@ -34,7 +34,7 @@
               <a class="nav__link" href="#about">About</a>
             </li>
             <li>
-              <a class="nav__link">Contacts</a>
+              <a class="nav__link" href="#about">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -44,11 +44,12 @@
           your development knowledge, or just use this lovely spot to work or
           study. This is a cool place for cool students!
         </p>
-        <!--<img
+        <img
           src="./images/inside_the_library.png"
           alt="Illustration 'Inside the library'"
           class="header__image"
-        -->
+        />
+
         <div class="header__footer">
           <a class="header__link" href="#about">About the library &darr;</a>
           <p class="header__address">
@@ -61,8 +62,8 @@
         <section class="staff" id="staff">
           <h2 class="staff__title">Staff picks</h2>
           <p class="staff__subtitle">That our readers love</p>
-          <!-- The ul tag (unordered list) is used here as it is a collection of cards for which the order doesn't really matter. -->
-          <ul>
+
+          <ul class="staff__card">
             <li class="card">
               <div class="card__content">
                 <h3 class="card__title">Introduction to Algorithms</h3>
@@ -290,12 +291,51 @@
               the American Geophysical Union.
             </p>
           </div>
-          <!-- <div class="about__circle"></div> -->
+          <div class="about__circle"></div>
         </section>
       </main>
 
       <footer class="footer">
-        <!-- The time to mark up the footer has come, you can do it 💪 -->
+        <div class="footer__columns">
+          <div class="footer__columns">
+            <img
+              class="footer__logo"
+              src="./images/logo_practicum.svg"
+              alt="Practicum logo"
+            />
+          </div>
+          <div class="footer__columns footer__column_content_hours">
+            <h4 class="footer__heading">Hours</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">Weekdays: 9am - 8pm</li>
+              <li class="footer__list-item">Weekends: 10am - 6pm</li>
+            </ul>
+          </div>
+          <div class="footer__columns footer__column_content_social">
+            <h4 class="footer_heading">Social media</h4>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://www.facebook.com/">
+                  <img
+                    class="footer__social-icon"
+                    src=".//images/facebook_white.svg"
+                    alt="Facebook Logo"
+                  />Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="https://www.instagram.com/">
+                  <img
+                    class="footer__social-icon"
+                    src=".//images/instagram_white.svg"
+                    alt="Instagram Logo"
+                  />Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- I skipped the so called copright section on purpose-->
       </footer>
       <!-- The end of Wrapping the entire page content-->
     </div>
