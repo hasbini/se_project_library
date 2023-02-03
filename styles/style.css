@@ -42,7 +42,7 @@
   font-weight: bold;
 }
 
-/* Add the hover state styles for .nav__link here */
+/* the hover state styles for .nav__link  */
 .nav__link:hover {
   color: #1f69c9;
 }
@@ -116,7 +116,6 @@
   margin: 24px 0 0;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__card {
   list-style-type: none;
   margin: auto;
@@ -237,7 +236,7 @@
   text-decoration: none;
 }
 
-/* Add the hover state styles for .events__more here */
+/* the hover state styles for .events__more */
 .events__more:hover {
   color: #1f69c9;
 }
