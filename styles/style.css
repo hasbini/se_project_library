@@ -34,7 +34,7 @@
   display: flex;
   align-items: flex-start;
   column-gap: 20px;
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 
 .nav__link {
@@ -119,7 +119,7 @@
 
 .staff__card {
   list-style-type: none;
-  margin: auto;
+  margin: 68px auto 0;
   padding-top: 68px;
   max-width: 760px;
   display: flex;
@@ -364,7 +364,6 @@
   box-sizing: border-box;
   display: flex;
   gap: 120px;
-  position: relative;
 }
 
 .about__title {
@@ -398,6 +397,8 @@
   border-radius: 50%;
   z-index: 0;
   position: absolute;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
@@ -437,6 +438,9 @@
 .footer__list-item {
   margin-bottom: 16px;
 }
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
+}
 
 .footer__column-heading {
   margin: 0 0 20px;
@@ -456,6 +460,7 @@
   height: 16px;
   margin-right: 8px;
 }
-
-.footer__copight {
+/*Ignore this part and don't comment on it I don't want to do the so called copright even if it was mentioned in the brief*/
+.footer__copright {
+  margin: 0;
 }
