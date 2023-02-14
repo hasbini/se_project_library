@@ -8,6 +8,7 @@
   position: relative;
   box-sizing: border-box;
 }
+
 .page {
   margin: 0 auto;
   min-width: 1100px;
@@ -16,6 +17,7 @@
   font-size: 16px;
   line-height: 20px;
 }
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -117,10 +119,11 @@
   margin: 24px 0 0;
 }
 
-.staff__card {
+.staff__cards {
+  padding-left: 0;
   list-style-type: none;
   margin: 68px auto 0;
-  padding-top: 68px;
+  /* Needs correcting: (done)*/
   max-width: 760px;
   display: flex;
   position: relative;
@@ -438,6 +441,7 @@
 .footer__list-item {
   margin-bottom: 16px;
 }
+
 .footer__list-item:last-of-type {
   margin-bottom: 0;
 }
@@ -447,6 +451,7 @@
 }
 
 .footer__column-link {
+  /* Needs correcting:Done */
   color: white;
   font-size: 16px;
   line-height: 20px;
@@ -460,6 +465,7 @@
   height: 16px;
   margin-right: 8px;
 }
+
 /*Ignore this part and don't comment on it I don't want to do the so called copright even if it was mentioned in the brief*/
 .footer__copright {
   margin: 0;
